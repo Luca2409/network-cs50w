@@ -1,4 +1,11 @@
-{% extends "network/layout.html" %} {% block body %} {% for post in posts%}
+{% extends "network/layout.html" %} {% block body %}
+<h1>Profile</h1>
+
+<h6>Follwers</h6>
+
+<h6>Following</h6>
+
+{% for post in posts %}
 
 <div style="border-style: solid; margin-bottom: 5px; width: 100%;">
 
@@ -9,6 +16,5 @@
     <p> Posted by: {{ post.user }} </p>
 
 </div>
-
 
 {% endfor %} {% endblock %}
